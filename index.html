@@ -1,0 +1,133 @@
+<link rel="stylesheet" href="./css/style.css">
+<header>
+    <div class="poisk">
+        <img src="./images/search.png" alt="">
+        <input type="text">
+    </div>
+    <div class="r">
+        <div class="op">
+            <img src="./images/bell.png" alt="">
+            <span></span>
+        </div>
+        <div class="person">
+            <img src="./images/bussiness-man.png">
+            <select name="">
+                <option value="Hachib">Hachib</option>
+            </select>
+        </div>
+        <img src="./images/settings.png">
+    </div>
+</header>
+
+<main>
+    <div class="left-window">
+        <div class="top">
+            <img src="./images/box.png">
+            <a href="#">
+                <h2>Inventory</h2>
+            </a>
+            <img src="./images/right-arrow.png">
+        </div>
+        <div class="bottom">
+            <a href="#"><img src="./images/box.png"> Lorem</a>
+            <a href="#"><img src="./images/box.png"> Lorem</a>
+            <a href="#"><img src="./images/box.png"> Lorem</a>
+            <a href="#"><img src="./images/box.png"> Lorem</a>
+            <a href="#"><img src="./images/box.png"> Lorem</a>
+            <a href="#"><img src="./images/box.png"> Lorem</a>
+            <a href="#"><img src="./images/box.png"> Lorem</a>
+            <a href="#"><img src="./images/box.png"> Lorem</a>
+            <a href="#"><img src="./images/box.png"> Lorem</a>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="top">
+            <div class="top_center">
+                <p>Заявки на обучение: </p>
+                <div class="left_side">
+                    <form action="">
+                        <input type="search" placeholder="Search">
+                        <select name="slc1" id="">
+                            <option value="Export">Export</option>
+                        </select>
+                        <button>+Add item</button>
+                    </form>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div class="element">
+                    <div class="item">
+                        <div class="heading">
+                            <input type="checkbox" name="check" id="">
+                            <h3>Имя</h3>
+                        </div>
+                        <div class="add">AC32334</div>
+                    </div>
+                    <div class="item">
+                        <h3>Возраст</h3>
+                        <div class="add_name">Broccoli</div>
+                    </div>
+                    <div class="item">
+                        <h3>Выбранный курс</h3>
+                        <div class="add_group">Vegetable</div>
+                    </div>
+                    <div class="item">
+                        <h3>Дата</h3>
+                        <div class="date">03 May 2021</div>
+                    </div>
+                    <div class="item">
+                        <h3>Время</h3>
+                        <div class="measure">10 Kg</div>
+                    </div>
+                    <div class="item">
+                        <h3>Actions</h3>
+                        <div class="act">
+                            <button>Изменить статус заявки</button>
+                            <button>Удалить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="te">
+                <b>Showing 1-10 of 148 entries</b>
+            </div>
+            <div class="numbers">
+                <button class="arrow-left">
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="arrow-right">></button>
+            </div>
+            <div class="show">
+                <b>Show</b>
+                <div class="how-many">
+                    <span>10</span>
+                    <div class="plus-minus">
+                        <span class="plus">+</span>
+                        <span class="minus">-</span>
+                    </div>
+                </div>
+                <b>entries</b>
+            </div>
+        </div>
+    </div>  
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script>
+    let arr = []
+    let api = 'https://wepro.uz/api/application'
+
+    axios.get(api)
+        .then((response) => {
+            console.log(response)
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+</script>
